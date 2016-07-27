@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
+ 	<link rel="stylesheet" type="text/css" href="css/styles.css">	
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+ 	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<title>Animation</title>
+</head>
+<body>
+	 <div class="container" ng-controller="AppCtrl">
+		<section>
+
+		  <div class="wrapper">
+		  	<img id="image1" src="images/cat.jpg">
+    		<p ng-show=" showme ">C'est moi le chat</p>
+  			</div>
+		<button classe="btn btn-primary" ng-click=" showme = !showme "> Animation</button>
+		</section>
+	</div>
+	<script src="app.js"></script>
+	<script src="script.js"></script>
+	<script src="controller.js"></script>
+</body>
+</html>
+<!-- Fonctionnement show me : declare la varialbe sur le texte qui s'affichera ou pas, on l'initiale a false dans le controller pour que soit cacher d'office
+Ng click binaire vrai ou faux,  ici si egal a vrai showme et si egal à false don't show -->
